@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Game Of Thrones</string>
+    <string name="Stark">Stark</string>
+    <string name="Lannister">Lannister</string>
+</resources>
