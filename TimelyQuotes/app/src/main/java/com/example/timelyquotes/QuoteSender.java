@@ -12,12 +12,6 @@ public class QuoteSender extends IntentService {
     // Actions:
     private static final String SEND_QUOTE = "com.example.timelyquotes.SEND.QUOTE";
     private static final String CANCEL_QUOTE = "com.example.timelyquotes.CANCEL.QUOTE";
-    private static final String REVIVE_QUOTE = "com.example.timelyquotes.REVIVE.QUOTE";
-
-    // Params:
-    private static final String TITLE_TO_SEND = "com.example.timelyquotes.TITLE.TO.SEND";
-    private static final String QUOTE_TO_SEND = "com.example.timelyquotes.QUOTE.TO.SEND";
-    private static final String STOP = "com.example.timelyquotes.CANCEL.QUOTES";
 
     public QuoteSender() {
         super("QuoteSender");
@@ -63,9 +57,11 @@ public class QuoteSender extends IntentService {
         PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 0,
                 intent, PendingIntent.FLAG_UPDATE_CURRENT);
         AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
-        alarmManager.setExact(AlarmManager.ELAPSED_REALTIME_WAKEUP,
-                SystemClock.elapsedRealtime() + 5000,
-                pendingIntent);
+        if (alarmManager != null) {
+            alarmManager.setInexactRepeating(AlarmManager.ELAPSED_REALTIME_WAKEUP,
+                    SystemClock.elapsedRealtime(),300000,
+                    pendingIntent);
+        }
     }
 
     private void handleActionCancel(){
@@ -76,4 +72,5 @@ public class QuoteSender extends IntentService {
         AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
         alarmManager.cancel(pendingIntent);
     }
+
 }
