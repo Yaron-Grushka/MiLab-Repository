@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "896465760179",
+    "firebase_url": "https://stocksapp-a814a.firebaseio.com",
+    "project_id": "stocksapp-a814a",
+    "storage_bucket": "stocksapp-a814a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:896465760179:android:2d101d27eb0da21bf565c6",
+        "android_client_info": {
+          "package_name": "com.example.stocksapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "896465760179-d8vlhrd7hjls67tggjgo1vo2qsmhg8lm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.stocksapp",
+            "certificate_hash": "675a8a915cc5f9bebbc947ccac6de235819be44e"
+          }
+        },
+        {
+          "client_id": "896465760179-av0q268ot69uihd7deqim9u8se1utssm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBt0ZwgsXpXBSNxwj59Z686QC0_6HW_N5k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "896465760179-av0q268ot69uihd7deqim9u8se1utssm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

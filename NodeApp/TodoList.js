@@ -12,7 +12,7 @@ app.get("/View", (req, res) => {
 })
 
 // Method for adding new items to list:
-app.post("/Add", (req, res) => {
+app.get("/Add", (req, res) => {
     let jsonFile = fs.readFileSync('./MyFile.json');
     let file = JSON.parse(jsonFile);
     let task = req.query.task; // Enter name of new task
