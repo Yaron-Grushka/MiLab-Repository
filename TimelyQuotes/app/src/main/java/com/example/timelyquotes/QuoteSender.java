@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.content.Context;
 import android.os.SystemClock;
 
+
 public class QuoteSender extends IntentService {
 
     // Actions:

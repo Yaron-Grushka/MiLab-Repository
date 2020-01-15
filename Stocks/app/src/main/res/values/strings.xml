@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">StocksApp</string>
+    <string name="hintText">Insert stock name...</string>
+    <string name="send">Send request</string>
+</resources>
